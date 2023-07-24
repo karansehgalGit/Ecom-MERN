@@ -7,6 +7,12 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
+import Work from "../layout/Header/Work";
+import Services from "../layout/Header/Services";
+// import { Carousel } from "react-responsive-carousel";
+// import img1 from "../../images/banner-gift-pack.jpg";
+// import img3 from "../../images/Masale"
+// import img2 from "../../images/banner-navratan-murabba.png";
 
 const Home = () => {
   const alert = useAlert();
@@ -29,6 +35,16 @@ const Home = () => {
         <Fragment>
           <MetaData title="ECOMMERCE" />
 
+          {/* <div className="header">
+            <div className="logo">
+              <img src="../../../images/shoplogo.jpg" alt="Logo"></img>
+            </div>
+
+            <div className="headerMenu"></div>
+
+            <div className="headerLogin"></div>
+          </div> */}
+
           <div className="banner">
             <p>Welcome to Herbal Mandir</p>
             <h1>FIND AMAZING PRODUCTS BELOW</h1>
@@ -40,6 +56,7 @@ const Home = () => {
             </a>
           </div>
 
+         
           <h2 className="homeHeading">Featured Products</h2>
 
           <div className="container" id="container">
@@ -48,6 +65,9 @@ const Home = () => {
                 <ProductCard key={product._id} product={product} />
               ))}
           </div>
+
+          <Services />
+          <Work />
         </Fragment>
       )}
     </Fragment>
