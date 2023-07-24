@@ -18,6 +18,7 @@ const Footer = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.755237862842!2d77.11228747469382!3d28.637096983874862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03eb232ad767%3A0xdf611be69500ba2!2sHerbal%20Mandir!5e0!3m2!1sen!2sin!4v1687609824337!5m2!1sen!2sin" title="Herbal Mandir Location" width="100%" height="auto" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
+
         <div className="midFooter">
           <h1>HERBAL MANDIR</h1>
           <p>High Quality is our first priority</p>
