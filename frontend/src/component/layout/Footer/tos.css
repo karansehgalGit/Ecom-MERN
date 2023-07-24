@@ -1,6 +1,6 @@
 .tosContainer {
     height: 250vh;
-    margin-bottom: -150px;
+    /* margin-bottom: -150px; */
     width: 100vw;
     max-width: 100%;
     display: grid;
@@ -47,7 +47,7 @@
 
 .ppContainer {
     height: 500vh;
-    margin-bottom: -150px;
+    /* margin-bottom: -150px; */
     width: 100vw;
     max-width: 100%;
     display: grid;
@@ -95,7 +95,7 @@
 
 .cancelContainer {
     height: 300vh;
-    margin-bottom: -150px;
+    /* margin-bottom: -150px; */
     width: 100vw;
     max-width: 100%;
     display: grid;
@@ -132,7 +132,7 @@
 
 .supportContainer {
     height: 50vh;
-    margin-bottom: -150px;
+    /* margin-bottom: 0px; */
     width: 100vw;
     max-width: 100%;
     display: grid;

@@ -42,6 +42,12 @@ import ProductReviews from "./component/Admin/ProductReviews";
 import Contact from "./component/layout/Contact/Contact";
 import About from "./component/layout/About/About";
 import NotFound from "./component/layout/Not Found/NotFound";
+// import Work from "./component/layout/Header/Work";
+import Support from "./component/layout/Footer/support";
+import TOS from "./component/layout/Footer/tos";
+import PP from "./component/layout/Footer/PrivacyPolicy";
+import Cancellation from "./component/layout/Footer/Cancellation";
+// import Services from "./component/layout/Header/Services";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -91,6 +97,16 @@ function App() {
         <Route exact path="/contact" component={Contact} />
 
         <Route exact path="/about" component={About} />
+
+        <Route exact path="/support" component={Support} />
+
+        <Route exact path="/terms-of-services" component={TOS} />
+
+        <Route exact path="/privacy-policy" component={PP} />
+        
+        <Route exact path="/cancellation" component={Cancellation} />
+
+        
 
         <ProtectedRoute exact path="/account" component={Profile} />
 
@@ -185,7 +201,8 @@ function App() {
           }
         />
       </Switch>
-
+      {/* <Services />
+      <Work /> */}
       <Footer />
     </Router>
   );
