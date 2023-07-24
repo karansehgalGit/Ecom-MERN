@@ -9,3 +9,147 @@
   height: 56px;
   border-radius: 100%;
 }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex-direction: column;
+}
+
+.logo > img {
+  width: 20px;
+}
+
+.logo > links {
+  align-items: flex-start;
+  color: white;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+header {
+  padding: 0.2vmax;
+  /* background-color: rgb(34, 33, 33); */
+  background-color: #292b46;
+  color: white;
+  /* display: flex; */
+  align-items: center;
+}
+
+.header {
+  display: flex;
+}
+@media (max-width: 786px) {
+  header {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .midHeader {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    /* align-items: center; */
+    /* flex-direction: row; */
+  }
+  
+  .midHeader > a {
+    /* color: white;
+    text-decoration: none;
+    margin-right: 1.5vw;
+    align-self: center;
+    /* align-items: center;  */
+    /* align-self: center; */
+    text-decoration: none;
+    font-size: 2vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    transition: all 0.5s;
+    margin-top: 1.5vmax;
+  }
+
+  .rightHeader {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+.leftHeader {
+  width: 40%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: left;
+}
+
+
+.leftHeader > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.midHeader {
+  width: 40%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.midHeader > a {
+  /* color: white;
+  text-decoration: none;
+  margin-right: 1.5vw;
+  /* align-self: center; */
+  /* align-items: center;  */
+
+  text-decoration: none;
+  font-size: 1.5vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+}
+
+
+
+.rightHeader {
+  width: 20%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.rightHeader > a {
+  text-decoration: none;
+  font-size: 1.5vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vmax;
+  margin-right: 3.5vw;
+}
+
+.rightHeader > a:hover {
+  color: #eb4034;
+}
+
+
+
+
