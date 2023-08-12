@@ -1,0 +1,265 @@
+/* 
+$text1: "Roboto", sans-serif;
+$text2: "Open Sans", sans-serif;
+
+$color1: #fef2f2;
+$color2: #286f6c;
+$color2_1: #174340;
+$color3: #f26440;
+$color3_light: rgb(249, 141, 141);
+$color3_1: #ad4126;
+$color4: #fff;
+$color5: #292b46;
+$color6: #161616;
+$color6_1: #16161698;
+$color6_2: #16161622;
+
+$p: 13.33vmax;
+$p_md: 7vmax;
+$p_base: 5vmax;
+$p_base_inverse: 15vmax 10vmax;
+$p_sm: 2vmax;
+$p_sm_inverse: 13vmax 0;
+$p_zero: 0; */
+
+#services {
+  width: 100%;
+  /* height: 100vh; */
+  height: 100vh;
+  /* padding: 13.33vmax; */
+  /* background-color: $color5; */
+  background-color: #292b46;
+  /* color: $color4; */
+  color: #fff;
+  overflow: hidden;
+}
+
+#services > h2 {
+  /* font: 700 2.5rem $text2; */
+  font: 700 2.5rem "Open Sans", sans-serif;
+  width: fit-content;
+  /* border-bottom: 1px solid $color4; */
+  border-bottom: 1px solid #fff;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+#services > section {
+  display: grid;
+  margin: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  /* height: 100%; */
+  height: 70%;
+  gap: 2rem;
+}
+
+#services > section > * {
+  width: 100%;
+  height: 100%;
+  /* background-color: $color4; */
+  background-color: #fff;
+  /* color: $color6; */
+  color: #161616;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+#services > section > *:hover {
+  /* box-shadow: 0 0 5px 15px $color1; */
+  box-shadow: 0 0 5px 15px #fef2f2;
+}
+
+#services > section > * > svg {
+  /* color: $color5; */
+  color: #292b46;
+  font-size: 3rem;
+}
+
+#services > section > * > span {
+  /* font: 700 1rem $text2; */
+  font: 700 1rem "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  margin: 1rem;
+}
+
+#services > section > .serviceBox1 {
+  grid-column: 1 / 2;
+  grid-row: 1/3;
+  /* background-color: $color1; */
+  background-color: #fef2f2;
+}
+
+#services > section > .serviceBox1 > a {
+    font: 700 1.2rem "Open Sans",sans-serif;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(203, 117, 117);
+    background-color: black;
+    border-radius: 20%;
+    padding: 10px;
+    /* margin: 50px; */
+}
+
+#services > section > .serviceBox1 > h3 {
+  /* font: 100 5rem $text1; */
+  font: 100 5rem "Roboto", sans-serif;
+}
+
+#services > section > .serviceBox1 > p {
+  /* font: 700 1.2rem $text2; */
+  font: 700 1.2rem "Open Sans", sans-serif;
+  letter-spacing: 3px;
+}
+
+#services > section > .serviceBox2 > a {
+    font: 700 1.2rem "Open Sans",sans-serif;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(203, 117, 117);
+    background-color: black;
+    border-radius: 20%;
+    padding: 10px;
+    /* margin: 50px; */
+}
+
+#services > section > .serviceBox3 > a {
+    font: 700 1.2rem "Open Sans",sans-serif;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(203, 117, 117);
+    background-color: black;
+    border-radius: 20%;
+    padding: 10px;
+    /* margin: 50px; */
+}
+
+#services > section > .serviceBox4 {
+  grid-column: 2/4;
+}
+
+#services > section > .serviceBox4 > a {
+    font: 700 1.2rem "Open Sans",sans-serif;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(203, 117, 117);
+    background-color: black;
+    border-radius: 20%;
+    padding: 10px;
+    /* margin: 50px; */
+}
+
+/* @media screen and (max-width: 1367px) {
+    #services {
+        /* padding: $p_md; */
+/* padding: 7vmax; */
+/* }
+
+    #services  > section {
+          height: 90%;
+    }
+}     */
+
+@media screen and (max-width: 1100px) {
+  #services {
+    /* padding: $p_base_inverse; */
+    /* padding: 15vmax 10vmax; */
+    padding: 15vmax 0;
+    text-align: center;
+  }
+
+  #services > section > .serviceBox1 > a {
+    font: 700 1rem "Open Sans",sans-serif;
+    padding: 5px;
+  }
+
+  #services > section > .serviceBox2 > a {
+    font: 700 1rem "Open Sans",sans-serif;
+    padding: 5px;
+  }
+  
+  #services > section > .serviceBox3 > a {
+    font: 700 1rem "Open Sans",sans-serif;
+    padding: 5px;
+  }
+
+  #services > section > .serviceBox4 > a {
+    font: 700 1rem "Open Sans",sans-serif;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #services {
+    /* padding: $p_sm_inverse; */
+    padding: 13vmax 0;
+    height: 90vh;
+  }
+
+  #services > section > .serviceBox1 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  #services > section > .serviceBox2 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #services > section > .serviceBox3 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  #services > section > .serviceBox4 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #services > section {
+    margin: 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #services > section > .serviceBox1 {
+    grid-column: 1/3;
+    grid-row: unset;
+  }
+
+  #services > section > .serviceBox4 {
+    grid-column: 1/3;
+  }
+
+  #services > section > .serviceBox1 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  #services > section > .serviceBox2 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #services > section > .serviceBox3 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  #services > section > .serviceBox4 > a {
+    font: 700 0.7rem "Open Sans",sans-serif;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}

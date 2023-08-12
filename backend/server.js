@@ -2,6 +2,9 @@ const app = require("./app");
 const cloudinary = require("cloudinary");
 const connectDatabase = require("./config/database");
 
+const cors = require('cors')
+
+const PORT = 8000
 // Handling Uncaught Exception
 process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
@@ -22,9 +25,9 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
-
-const server = app.listen(process.env.PORT, () => {
-  console.log(`Server is working on http://localhost:${process.env.PORT}`);
+app.use(cors())
+const server = app.listen(PORT, () => {
+  console.log(`Server is working on http://localhost:${PORT}`);
 });
 
 // Unhandled Promise Rejection

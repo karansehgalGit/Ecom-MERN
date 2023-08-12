@@ -7,8 +7,8 @@ import "./Work.css";
 
 const Work = () => {
   return (
-    // <div id="work">
-    <div className="work">
+    <div id="work">
+    {/* // <div className="work"> */}
         <h2>Home Made Products</h2>
         <section>
             <article>

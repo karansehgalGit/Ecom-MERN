@@ -29,18 +29,11 @@
   justify-content: space-around;
 }
 
-
-
-
-
-
-
-
-
 header {
   padding: 0.2vmax;
   /* background-color: rgb(34, 33, 33); */
   background-color: #292b46;
+  /* background-color: #493e29; */
   color: white;
   /* display: flex; */
   align-items: center;
@@ -48,45 +41,6 @@ header {
 
 .header {
   display: flex;
-}
-@media (max-width: 786px) {
-  header {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-
-  .midHeader {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-
-    /* align-items: center; */
-    /* flex-direction: row; */
-  }
-  
-  .midHeader > a {
-    /* color: white;
-    text-decoration: none;
-    margin-right: 1.5vw;
-    align-self: center;
-    /* align-items: center;  */
-    /* align-self: center; */
-    text-decoration: none;
-    font-size: 2vmax;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-    transition: all 0.5s;
-    margin-top: 1.5vmax;
-  }
-
-  .rightHeader {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-  }
 }
 
 .leftHeader {
@@ -96,7 +50,6 @@ header {
   flex-direction: column;
   align-items: left;
 }
-
 
 .leftHeader > img {
   width: 10vmax;
@@ -120,14 +73,12 @@ header {
   /* align-items: center;  */
 
   text-decoration: none;
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   transition: all 0.5s;
   margin: 0.5vmax;
 }
-
-
 
 .rightHeader {
   width: 20%;
@@ -138,7 +89,7 @@ header {
 
 .rightHeader > a {
   text-decoration: none;
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   transition: all 0.5s;
@@ -150,6 +101,290 @@ header {
   color: #eb4034;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    /* display: grid; */
+    display: flex;
+  }
 
+  .midHeader {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* flex-direction: row; */
+  }
 
+  .midHeader > a {
+    text-decoration: none;
+    /* font-size: 2vmax; */
+    font-size: 3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    transition: all 0.5s;
+    /* margin: 0.5vmax; */
+    /* float: left; */
+    /* margin: auto; */
+    margin-right: 4vw;
+    /* justify-content: space-between; */
+  }
 
+  .rightHeader {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* margin: auto ; */
+    justify-content: end;
+  }
+
+  .rightHeader > a {
+    text-decoration: none;
+    /* font-size: 2vmax; */
+    font-size: 3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    transition: all 0.5s;
+    /* margin: 0.5vmax; */
+    /* margin-right: 3.5vw; */
+    /* margin: auto; */
+    justify-content: flex-end;
+    /* margin-left: 1vw; */
+  }
+
+  .rightHeader > a:hover {
+    color: #eb4034;
+  }
+}
+
+/* 
+$text1: "Roboto", sans-serif;
+$text2: "Open Sans", sans-serif;
+
+$color1: #fef2f2;
+$color2: #286f6c;
+$color2_1: #174340;
+$color3: #f26440;
+$color3_light: rgb(249, 141, 141);
+$color3_1: #ad4126;
+$color4: #fff;
+$color5: #292b46;
+$color6: #161616;
+$color6_1: #16161698;
+$color6_2: #16161622;
+
+$p: 13.33vmax;
+$p_md: 7vmax;
+$p_base: 5vmax;
+$p_base_inverse: 15vmax 10vmax;
+$p_sm: 2vmax;
+$p_sm_inverse: 13vmax 0;
+$p_zero: 0; */
+
+nav {
+  width: 100%;
+  height: 100px;
+  /* background-color: $color1; */
+  background-color: #fef2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 $p; */
+  /* padding: 0 13.33vmax; */
+  /* padding: 0 1vmax; */
+  position: sticky;
+  top: 0%;
+  z-index: 60;
+}
+
+nav > h2 {
+  font-size: 2rem;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav > div > a {
+  /* color: $color6; */
+  font-size: 2vmax;
+  color: #161616;
+  font-weight: 500;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* nav > div > a > &:hover { */
+nav > div > a:hover {
+  /* color: $color3; */
+  color: #f26440;
+}
+
+nav > a > button {
+  /* border: 1px solid $color6_1; */
+  border: 1px solid #16161698;
+  padding: 0.5rem 2rem;
+  /* background-color: $color1; */
+  background-color: #fef2f2;
+  cursor: pointer;
+  /* color: $color6; */
+  color: #161616;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+nav > a > button:hover {
+  /* background-color: $color6; */
+  background-color: #161616;
+  /* color: $color4; */
+  color: #fff;
+}
+
+.navBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  /* color: $color5; */
+  color: #292b46;
+  font-size: 1.4rem;
+  z-index: 150;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+}
+
+.navBtn:hover {
+  /* color: $color3; */
+  color: #f26440;
+}
+
+.navPhone {
+  transition: all 0.5s;
+  transform: translateY(-200%);
+  width: 100%;
+  height: 100vh;
+  /* background-color: $color5; */
+  background-color: #292b46;
+  /* padding: $p_base; */
+  padding: 5vmax;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.navPhone > h2 {
+  font-size: 2rem;
+  /* color: $color4; */
+  color: #fff;
+}
+
+.navPhone > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navPhone > div > a {
+  /* color: $color4; */
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.navPhone > div > a:hover {
+  /* color: $color3; */
+  color: #f26440;
+}
+
+.navPhone > a > button {
+  /* border: 1px solid $color6_1; */
+  border: 1px solid #16161698;
+  padding: 0.5rem 2rem;
+  /* background-color: $color1; */
+  background-color: #fef2f2;
+  cursor: pointer;
+  /* color: $color6; */
+  color: #161616;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navPhone > a > button:hover {
+  /* background-color: $color6; */
+  background-color: #161616;
+  /* color: $color4; */
+  color: #fff;
+}
+
+.navBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  color: #292b46;
+  font-size: 1.4rem;
+  display: none;
+  z-index: 150;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+.navBtn:hover {
+  color: #f26440;
+}
+
+.navPhoneComes {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 786px) {
+  
+  nav {
+    flex-direction: column;
+  }
+  
+  nav > div > a {
+    /* /* display: none; */
+  font-size: 12px;
+  } 
+
+  /* .navBtn {
+    display: block;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    /* padding: 0 $p_sm; */
+    /* padding: 0 2vmax; */
+    padding: 0 0;
+    flex-direction: column;
+  }
+
+    nav > h2 {
+      font-size: 1.8rem;
+    }
+    nav > div {
+      gap: 1rem;
+    }
+  }
+
+  

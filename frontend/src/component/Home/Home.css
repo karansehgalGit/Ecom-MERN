@@ -1,26 +1,34 @@
 .banner {
   /* background-image: url("../../images/cover.jfif"); */
-  background-image: url("../../images/pickle_carousel.webp");
+  /* background-image: url("../../images/pickle_carousel.webp"); */
+  background-image: url("../../images/Main_banner.jpeg");
   background-position: center;
+  /* background-position: top; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vmin;
+  height: 130vmin;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  /* justify-content: center; */
   justify-content: center;
   color: black;
 }
 
 .banner > h1 {
   margin: 5vmax;
-
   font: 600 2.5vmax "Roboto";
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .banner > p {
-  font: 300 1.4vmax "Lucida Sans";
+  font: 300 1.8vmax "Lucida Sans";
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .banner > a > button {
@@ -42,13 +50,14 @@
 .banner::after {
   content: "";
   width: 100vw;
-  height: 100vmin;
+  height: 120vmin;
   background-color: #ffffff;
   position: absolute;
   /* position: relative; */
   top: 17.5%;
   left: 0;
-  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  /* clip-path: polygon(100% 68%, 0 100%, 100% 100%); */
+  clip-path: polygon(100% 100%, 0 100%, 100% 100%);
   max-width: 100%;
 }
 
@@ -140,4 +149,97 @@
     margin: 0 0.5vmax;
     font: 300 1vmax "Roboto";
   }
+
+  .banner {
+    height: 80vmin;
+  }
+  
+  .banner > h1 {
+    margin: 3vmax;
+    font: 600 3vmax "Roboto";
+  }
+  
+  .banner > p {
+    font: 300 3vmax "Lucida Sans";
+  }
+
+  
+.banner > a > button {
+  margin-bottom: 5vmax;
+  border-radius: 10px;
+  width: 19vmax;
+  font: 500 3vmax "Roboto";
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 3vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 60vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contain{
+  margin: 0;
+  background-color: rgb(224, 219, 219);
+  /* background-color: black; */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  grid-auto-rows: 300px;
+  grid-template-rows: 700px ;
+}
+
+.box {
+  /* background-color: rgb(0, 132, 255); */
+  background-color: #292b46;
+  color: white;
+  /* border: 3px solid red; */
+  /* height: 100vh; */
+}
+
+#section1 {
+  margin-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+
+#section2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+#section3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  margin-bottom: -100px;
 }

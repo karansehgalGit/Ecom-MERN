@@ -2,7 +2,9 @@ import React from 'react';
 // import {motion} from "framer-motion";
 import Typewriter from "typewriter-effect";
 // import {AiFillIeCircle, AiFillAndroid, AiFillWindows} from "react-icons/ai";
-import "./services.css";
+// import "./services.css";
+import "./service.css";
+
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -43,20 +45,22 @@ const Services = () => {
                 initial={animations.one}
             >
     
-                <h3>15+ Murabbas</h3>
-                <p>Spl.</p>
+                {/* <h3>15+ Murabbas</h3> */}
+                {/* <p>Spl.</p> */}
                 {/* <p>Amla Barfi</p> */}
                 {/* <p>Navratan murabba</p> */}
                 {/* <p>Paan Khajoor (Seasonal)</p> */}
-                <p><Typewriter
+                {/* <p><Typewriter */}
+                <span><Typewriter
                         options={{
-                            strings: ["Amla Barfi", "Navratan murabba", "Paan Khajoor"],
+                            strings: ["15+ Murabbas", "Spl.", "Amla Barfi", "Navratan murabba", "Paan Khajoor"],
                             autoStart: true,
                             loop: true,
                             // cursor: "",
                             wrapperClassName: "typewriterpara",
                         }}
-                /></p>
+                // /></p>
+                /></span>
                 {/* <a href='/products'>Products</a> */}
                 <Link to="/products">Products</Link>
 
@@ -72,20 +76,20 @@ const Services = () => {
             >
                {/* <AiFillIeCircle /> */}
                {/* <span>Pickles</span> */}
-                <h3>15+ Pickles</h3>
-                <p>Spl.</p>
+                {/* <h3>15+ Pickles</h3> */}
+                {/* <p>Spl.</p> */}
                 {/* <p>Mix Achar</p> */}
                 {/* <p>Aam Achar</p> */}
                 {/* <p>Nimbu Achar</p> */}
-                <p><Typewriter
+                <span><Typewriter
                         options={{
-                            strings: ["Mix Achar", "Aam Achar", "Nimbu Achar", "Mirch Achar"],
+                            strings: ["15+ Pickles", "Spl.", "Mix Achar", "Aam Achar", "Nimbu Achar", "Mirch Achar"],
                             autoStart: true,
                             loop: true,
                             // cursor: "",
                             wrapperClassName: "typewriterpara",
                         }}
-                /></p>
+                /></span>
                 {/* <a href='/products'>Products</a> */}
                 <Link to="/products">Products</Link>
 
@@ -105,21 +109,21 @@ const Services = () => {
             >
                {/* <AiFillAndroid /> */}
                {/* <span>Spices</span> */}
-                <h3>30+ Spices</h3>
-                <p>Spl.</p>
+                {/* <h3>30+ Spices</h3> */}
+                {/* <p>Spl.</p> */}
                 {/* <p>Chai Masala</p> */}
                 {/* <p>Garam Masala</p> */}
                 {/* <p>Kasuri Methi</p> */}
                 {/* <p>Parantha Masala</p> */}
-                <p><Typewriter
+                <span><Typewriter
                         options={{
-                            strings: ["Chai Masala", "Garam Masala", "Kasuri Methi", "Parantha Masala"],
+                            strings: ["30+ Spices", "Spl.", "Chai Masala", "Garam Masala", "Kasuri Methi", "Parantha Masala"],
                             autoStart: true,
                             loop: true,
                             // cursor: "",
                             wrapperClassName: "typewriterpara",
                         }}
-                /></p>
+                /></span>
                 {/* <a href='/products'>Products</a> */}
                 <Link to="/products">Products</Link>
 
@@ -134,21 +138,21 @@ const Services = () => {
             >
                {/* <AiFillWindows /> */}
                {/* <span>Gift Packs</span> */}
-                <h3>Gift Packs</h3>
-                <p>Spl.</p>
+                {/* <h3>Gift Packs</h3> */}
+                {/* <p>Spl.</p> */}
                 {/* <p>Dry Fruits</p> */}
                 {/* <p>Amla Barfi</p> */}
                 {/* <p>Paan Khajoor</p> */}
                 {/* <p>Navaratan Murabba</p> */}
-                <p><Typewriter
+                <span><Typewriter
                         options={{
-                            strings: ["Dry Fruits", "Amla Barfi", "Paan Khajoor", "Navaratan Murabba"],
+                            strings: ["Gift Packs", "Spl.", "Dry Fruits", "Amla Barfi", "Paan Khajoor", "Navaratan Murabba"],
                             autoStart: true,
                             loop: true,
                             // cursor: "",
                             wrapperClassName: "typewriterpara",
                         }}
-                /></p>
+                /></span>
                 {/* <a href='/products'>Products</a> */}
                 <Link to="/products">Products</Link>
 

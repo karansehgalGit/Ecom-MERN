@@ -1,175 +1,273 @@
 .tosContainer {
-    height: 250vh;
-    /* margin-bottom: -150px; */
-    width: 100vw;
-    max-width: 100%;
-    display: grid;
-    /* place-items: center; */
-    align-items: flex-start;
-    /* background-color: white; */
-    background-color:rgb(128, 199, 240); 
-    /* position: fixed; */
+  height: 200vh;
+  /* height: 80vmax; */
+  /* margin-bottom: -150px; */
+  width: 100vw;
+  /* max-width: 100%; */
+  display: grid;
+  /* place-items: center; */
+  align-items: flex-start;
+  /* background-color: white; */
+  background-color: rgb(128, 199, 240);
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
 }
 
 .tosContainer > h1 {
-    font: 200 3.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    /* margin-bottom: -50px; */
+  font: 200 3.5rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+  /* margin-bottom: -50px; */
 }
 
 .tosContainer > h2 {
-    font: 200 2rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    /* margin-bottom: -50px; */
-}
-
-.tosContainer > h4 {
-    font: 200 3.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    margin-bottom: -50px;
+  font: 200 2rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+  /* margin-bottom: -50px; */
 }
 
 .tosContainer > ul {
-    font: 200 1.2rem solid black;
-    /* text-align: center; */
-    padding: 0 10rem;
-    /* margin-bottom: -50px; */
+  font: 200 1.5rem solid black;
+  /* text-align: center; */
+  padding: 0 10rem;
+  /* margin-bottom: -50px; */
 }
 
 .tosContainer > p {
-    font: 200 1.5rem solid black;
-    /* text-align: center; */
-    padding: 0 10rem;
+  font: 200 1.2rem solid black;
+  /* text-align: center; */
+  padding: 0 10rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .tosContainer {
+    overflow-x: scroll;
+  }
+
+  .tosContainer > h1 {
+    font-size: 20px;
+  }
+
+  .tosContainer > h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .tosContainer > ul {
+    font-size: 16px;
+  }
+
+  .tosContainer > p {
+    font-size: 14px;
+  }
 }
 
 .ppContainer {
-    height: 500vh;
-    /* margin-bottom: -150px; */
-    width: 100vw;
-    max-width: 100%;
-    display: grid;
-    /* place-items: center; */
-    align-items: flex-start;
-    /* background-color: white; */
-    background-color:rgb(128, 240, 173); 
-    /* position: fixed; */
+  height: 500vh;
+  /* margin-bottom: -150px; */
+  width: 100vw;
+  /* padding: 10px; */
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
+  /* max-width: 100%; */
+  display: grid;
+  /* place-items: center; */
+  align-items: flex-start;
+  /* background-color: white; */
+  background-color: rgb(128, 240, 173);
+  /* position: fixed; */
 }
 
 .ppContainer > h1 {
-    font: 200 3.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    margin-bottom: 50px;
+  font: 200 3.5rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+  margin-bottom: 50px;
 }
 
 .ppContainer > h2 {
-    font: 900 2rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    margin-top: 10px;
+  font: 900 2rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+  margin-top: 10px;
 }
 
 .ppContainer > h4 {
-    font: 200 3.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    /* margin-bottom: -50px; */
+  font: 200 3.5rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+  /* margin-bottom: -50px; */
 }
 
 .ppContainer > p {
-    font: 200 1.5rem solid black;
-    /* text-align: center; */
-    padding: 0 10rem;
-    /* margin-top: -50px; */
+  font: 200 1.5rem solid black;
+  /* text-align: center; */
+  padding: 0 10rem;
+  /* margin-top: -50px; */
 }
 
 .ppContainer > ul {
-    font: 200 1.2rem solid black;
-    /* text-align: center; */
-    padding: 0 10rem;
-    /* margin-top: -50px; */
+  font: 200 1.2rem solid black;
+  /* text-align: center; */
+  padding: 0 10rem;
+  /* margin-top: -50px; */
+}
+
+@media screen and (max-width: 900px) {
+  .ppContainer {
+    overflow-x: scroll;
+  }
+
+  .ppContainer > h1 {
+    font-size: 20px;
+  }
+
+  .ppContainer > h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .ppContainer > ul {
+    font-size: 16px;
+  }
+
+  .ppContainer > p {
+    font-size: 14px;
+  }
 }
 
 .cancelContainer {
-    height: 300vh;
-    /* margin-bottom: -150px; */
-    width: 100vw;
-    max-width: 100%;
-    display: grid;
-    /* place-items: center; */
-    align-items: flex-start;
-    /* background-color: white; */
-    background-color:rgb(225, 240, 128); 
-    /* position: fixed; */
+  height: 320vh;
+  /* margin-bottom: -150px; */
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  /* place-items: center; */
+  align-items: flex-start;
+  /* background-color: white; */
+  background-color: rgb(225, 240, 128);
+  /* position: fixed; */
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
 }
-.cancelContainer > p {    
-    font: 200 1.5rem solid black;
-    /* text-align: center; */
-    padding: 0 10rem;
-}
-
-.cancelContainer > h1 {    
-    font: 900 2.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
+.cancelContainer > p {
+  font: 200 1.5rem solid black;
+  /* text-align: center; */
+  padding: 0 10rem;
 }
 
-.cancelContainer > h2 {    
-    font: 900 1.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
+.cancelContainer > h1 {
+  font: 900 2.5rem solid black;
+  text-align: center;
+  padding: 0 10rem;
 }
 
-.cancelContainer > ul {    
-    font: 300 1.2rem solid black;
-    /* text-align: center; */
-    padding: 0 10rem;
-    margin-bottom: 10px;
+.cancelContainer > h2 {
+  font: 900 1.5rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+}
+
+.cancelContainer > ul {
+  font: 300 1.2rem solid black;
+  /* text-align: center; */
+  padding: 0 10rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .cancelContainer {
+    overflow-x: scroll;
+  }
+
+  .cancelContainer > h1 {
+    font-size: 20px;
+  }
+
+  .cancelContainer > h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .cancelContainer > ul {
+    font-size: 16px;
+  }
+
+  .cancelContainer > p {
+    font-size: 14px;
+  }
 }
 
 .supportContainer {
-    height: 50vh;
-    /* margin-bottom: 0px; */
-    width: 100vw;
-    max-width: 100%;
-    display: grid;
-    place-items: center;
-    /* background-color: white; */
-    background-color:rgb(190, 128, 240); 
+  height: 100vh;
+  /* margin-bottom: 0px; */
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  /* background-color: white; */
+  background-color: rgb(190, 128, 240);
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
 }
 
 .supportContainer > h1 {
-    font: 200 3.5rem solid black;
-    text-align: center;
-    padding: 0 10rem;
-    margin-bottom: -50px;
+  font: 200 3.5rem solid black;
+  text-align: center;
+  padding: 0 10rem;
+  margin-bottom: -50px;
 }
 
 .supportContainer > h3 {
-    font: 200 1.5rem solid black;
-    text-align: center;
-    padding: 0 12rem;
-    flex-wrap: flex;
+  font: 200 1.5rem solid black;
+  text-align: center;
+  padding: 0 12rem;
+  flex-wrap: flex;
 }
 
 .mailBtn {
-    text-decoration: none;
-    transform: translateX(-100vw);
-    animation: mailBtnAnimation 2s forwards;
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 2s forwards;
+}
+
+.mailBtn > button {
+  text-decoration: none;
+  font: 200 2vmax "Roboto";
+  cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+  padding: 2vmax;
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
   }
-  
-  .mailBtn > button {
-    text-decoration: none;
-    font: 200 2vmax "Roboto";
-    cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
-    padding: 2vmax;
+}
+
+@media screen and (max-width: 900px) {
+  .supportContainer {
+    overflow-x: scroll;
   }
-  
-  @keyframes mailBtnAnimation {
-    to {
-      transform: translateX(0);
-    }
+  .supportContainer > h1 {
+    font-size: 20px;
   }
+
+  .supportContainer > h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .supportContainer > ul {
+    font-size: 16px;
+  }
+
+  .supportContainer > p {
+    font-size: 14px;
+  }
+}

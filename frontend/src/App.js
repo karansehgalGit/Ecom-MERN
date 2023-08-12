@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Header from "./component/layout/Header/Header.js";
+import Header, {HeaderPhone} from "./component/layout/Header/Header.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WebFont from "webfontloader";
 import React from "react";
@@ -50,6 +50,9 @@ import Cancellation from "./component/layout/Footer/Cancellation";
 // import Services from "./component/layout/Header/Services";
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -59,6 +62,10 @@ function App() {
 
     setStripeApiKey(data.stripeApiKey);
   }
+
+
+
+
 
   useEffect(() => {
     WebFont.load({
@@ -76,7 +83,8 @@ function App() {
 
   return (
     <Router>
-      <Header />
+      <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Header  menuOpen={menuOpen} setMenuOpen = {setMenuOpen} />
 
       {isAuthenticated && <UserOptions user={user} />}
 
