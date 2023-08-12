@@ -2,7 +2,7 @@ const app = require("./app");
 const cloudinary = require("cloudinary");
 const connectDatabase = require("./config/database");
 
-const cors = require('cors')
+
 
 const PORT = 8000
 // Handling Uncaught Exception
@@ -25,7 +25,8 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
-app.use(cors())
+
+
 const server = app.listen(PORT, () => {
   console.log(`Server is working on http://localhost:${PORT}`);
 });

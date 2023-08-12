@@ -6,7 +6,7 @@ const fileUpload = require("express-fileupload");
 const path = require("path");
 
 const errorMiddleware = require("./middleware/error");
-
+const cors = require('cors')
 
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
@@ -14,10 +14,13 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 }
 
 
+app.use(cors())
+
 app.use(express.json());
-app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 app.use(fileUpload());
+
 
 // Route Imports
 const product = require("./routes/productRoute");
